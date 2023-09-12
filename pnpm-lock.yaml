@@ -4,6 +4,9 @@ importers:
 
   .:
     dependencies:
+      '@ctrl/tinycolor':
+        specifier: ^4.0.2
+        version: 4.0.2
       dumi:
         specifier: ^2
         version: 2.2.4(@babel/core@7.22.10)(@types/node@20.4.8)(@types/react@18.2.19)(eslint@8.46.0)(postcss@8.4.27)(prettier@2.8.8)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.0.7)(stylelint@15.10.2)(typescript@5.1.6)(webpack@5.88.2)
@@ -1727,6 +1730,11 @@ packages:
       postcss-selector-parser: ^6.0.13
     dependencies:
       postcss-selector-parser: 6.0.13
+
+  /@ctrl/tinycolor@4.0.2:
+    resolution: {integrity: sha512-fKQinXE9pJ83J1n+C3rDl2xNLJwfoYNvXLRy5cYZA9hBJJw2q+sbb/AOSNKmLxnTWyNTmy4994dueSwP4opi5g==}
+    engines: {node: '>=14'}
+    dev: false
 
   /@emotion/is-prop-valid@1.2.1:
     resolution: {integrity: sha512-61Mf7Ufx4aDxx1xlDeOm8aFFigGHE4z+0sKCa+IHCeZKiyP9RLD0Mmx7m8b9/Cf37f7NAvQOOJAbQQGVr5uERw==}

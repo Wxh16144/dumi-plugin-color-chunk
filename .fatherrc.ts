@@ -1,7 +1,16 @@
 import { defineConfig } from 'father';
 
 export default defineConfig({
-  cjs: { output: 'lib' },
-  esm: { output: 'es' },
-  umd: { output: 'dist', name: 'dumiPluginColorChunk' },
+  cjs: {
+    output: 'lib',
+    ignores: ['src/component/**'],
+  },
+  esm: {
+    output: 'es',
+    overrides: {
+      'src/component': {
+        output: 'es/component',
+      },
+    },
+  },
 });
