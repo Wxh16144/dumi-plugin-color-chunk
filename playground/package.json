@@ -1,0 +1,14 @@
+{
+  "name": "playground",
+  "private": true,
+  "scripts": {
+    "build": "dumi build",
+    "dev": "dumi dev",
+    "prepare": "husky install && dumi setup",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "dumi": "^2",
+    "dumi-plugin-color-chunk": "workspace:*"
+  }
+}

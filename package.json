@@ -1,0 +1,98 @@
+{
+  "name": "dumi-plugin-color-chunk",
+  "version": "0.0.1",
+  "keywords": [
+    "dumi"
+  ],
+  "homepage": "https://github.com/Wxh16144/dumi-plugin-color-chunk#readme",
+  "bugs": {
+    "url": "https://github.com/Wxh16144/dumi-plugin-color-chunk/issues/new"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wxh16144/dumi-plugin-color-chunk.git"
+  },
+  "license": "MIT",
+  "author": "Wxh16144(wxh1220@gmail.com)",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./es/index.d.ts",
+      "import": "./es/index.js",
+      "require": "./lib/index.js"
+    }
+  },
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "build": "father build",
+    "build:watch": "father dev",
+    "ci": "npm run lint && npm run type-check && npm run doctor && npm run build",
+    "clean": "rm -rf es lib dist coverage playground/.dumi/tmp* .eslintcache .doc",
+    "dev": "pnpm run --filter playground dev",
+    "doctor": "father doctor",
+    "lint": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run doctor && npm run build",
+    "prettier": "prettier -c --write \"**/**\"",
+    "release": "semantic-release",
+    "test": "vitest --passWithNoTests",
+    "test:coverage": "vitest run --coverage --passWithNoTests",
+    "test:update": "vitest -u",
+    "type-check": "tsc -p tsconfig-check.json"
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17",
+    "@commitlint/config-conventional": "^17",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@umijs/lint": "^4",
+    "@vitest/coverage-v8": "latest",
+    "commitlint": "^17",
+    "concurrently": "^7",
+    "cross-env": "^7",
+    "eslint": "^8",
+    "fast-glob": "^3.3.1",
+    "father": "^4",
+    "husky": "^8",
+    "lint-staged": "^13",
+    "prettier": "^2",
+    "prettier-plugin-organize-imports": "^3",
+    "prettier-plugin-packagejson": "^2",
+    "react": "^18",
+    "react-dom": "^18",
+    "semantic-release": "^21",
+    "stylelint": "^15",
+    "typescript": "^5",
+    "vitest": "latest"
+  },
+  "peerDependencies": {
+    "dumi": "^2"
+  },
+  "packageManager": "pnpm@8.0.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
