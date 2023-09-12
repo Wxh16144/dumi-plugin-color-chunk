@@ -1,3 +1,9 @@
+# 1.0.0 (2023-09-12)
+
+### Features
+
+- 基本功能实现 ([#1](https://github.com/Wxh16144/dumi-plugin-color-chunk/issues/1)) ([e9a8c70](https://github.com/Wxh16144/dumi-plugin-color-chunk/commit/e9a8c7010f0d6d9dc324c8bd2aef526ba0865465))
+
 # 1.0.0-beta.1 (2023-09-12)
 
 ### Features
