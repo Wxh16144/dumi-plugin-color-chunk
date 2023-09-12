@@ -10,6 +10,13 @@ importers:
       dumi:
         specifier: ^2
         version: 2.2.4(@babel/core@7.22.10)(@types/node@20.4.8)(@types/react@18.2.19)(eslint@8.46.0)(postcss@8.4.27)(prettier@2.8.8)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.0.7)(stylelint@15.10.2)(typescript@5.1.6)(webpack@5.88.2)
+    optionalDependencies:
+      react:
+        specifier: ^18
+        version: 18.2.0
+      react-dom:
+        specifier: ^18
+        version: 18.2.0(react@18.2.0)
     devDependencies:
       '@commitlint/cli':
         specifier: ^17
@@ -68,12 +75,6 @@ importers:
       prettier-plugin-packagejson:
         specifier: ^2
         version: 2.4.5(prettier@2.8.8)
-      react:
-        specifier: ^18
-        version: 18.2.0
-      react-dom:
-        specifier: ^18
-        version: 18.2.0(react@18.2.0)
       semantic-release:
         specifier: ^21
         version: 21.0.7

@@ -94,6 +94,10 @@
   "peerDependencies": {
     "dumi": "^2"
   },
+  "optionalDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
   "packageManager": "pnpm@8.0.0",
   "publishConfig": {
     "access": "public",
