@@ -5,7 +5,7 @@ importers:
   .:
     dependencies:
       '@ctrl/tinycolor':
-        specifier: ^4.0.2
+        specifier: ^4
         version: 4.0.2
       dumi:
         specifier: ^2

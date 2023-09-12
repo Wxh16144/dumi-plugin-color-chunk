@@ -36,9 +36,10 @@
     "ci": "npm run lint && npm run type-check && npm run doctor && npm run build",
     "clean": "rm -rf es lib dist coverage playground/.dumi/tmp* .eslintcache .doc",
     "dev": "pnpm run --filter playground dev",
+    "docs:build": "pnpm run --filter playground build",
     "doctor": "father doctor",
     "lint": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
-    "prepare": "husky install",
+    "prepare": "husky install && npm run build",
     "prepublishOnly": "npm run doctor && npm run build",
     "prettier": "prettier -c --write \"**/**\"",
     "release": "semantic-release",
@@ -59,6 +60,9 @@
       "eslint --fix",
       "prettier --parser=typescript --write"
     ]
+  },
+  "dependencies": {
+    "@ctrl/tinycolor": "^4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17",

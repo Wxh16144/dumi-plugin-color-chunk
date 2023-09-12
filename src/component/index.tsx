@@ -31,7 +31,7 @@ function ColorChunk(props: React.PropsWithChildren<ColorChunkProps>) {
 
   const dotStyle: React.CSSProperties = {
     display: 'inline-block',
-    backgroundColor: finalValue,
+    backgroundColor: new TinyColor(finalValue).toRgbString(),
     width: '6px',
     height: '6px',
     borderRadius: '50%',

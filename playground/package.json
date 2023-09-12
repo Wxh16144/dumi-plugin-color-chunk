@@ -4,7 +4,7 @@
   "scripts": {
     "build": "dumi build",
     "dev": "dumi dev",
-    "prepare": "husky install && dumi setup",
+    "prepare": "dumi setup",
     "start": "npm run dev"
   },
   "devDependencies": {
