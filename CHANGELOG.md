@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.0.0...v1.0.1) (2023-09-13)
+
+### Performance Improvements
+
+- 优化代码逻辑 ([9cfb349](https://github.com/Wxh16144/dumi-plugin-color-chunk/commit/9cfb34914a67a669142e170bf4a977c36436d3fd))
+
 # 1.0.0 (2023-09-12)
 
 ### Features

@@ -1,6 +1,6 @@
 {
   "name": "dumi-plugin-color-chunk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dumi Plugin - Beautify inline color blocks",
   "keywords": [
     "dumi"
