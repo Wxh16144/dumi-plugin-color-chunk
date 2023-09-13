@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.0.1...v1.0.2) (2023-09-13)
+
+### Bug Fixes
+
+- revert ban logic ([5527332](https://github.com/Wxh16144/dumi-plugin-color-chunk/commit/5527332d2a0c1c2e65ab8f0a24ad05174c031bc5))
+
 ## [1.0.1](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.0.0...v1.0.1) (2023-09-13)
 
 ### Performance Improvements
