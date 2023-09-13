@@ -11,7 +11,7 @@ function remarkPlugin() {
       if (color.isValid) {
         parent!.children.splice(index!, 1, {
           type: 'html',
-          value: `<code ${VALID_COLOR_CHUNK}=${color.toHex8String()}>${node.value}</code>`,
+          value: `<code ${VALID_COLOR_CHUNK}="${VALID_COLOR_CHUNK}">${node.value}</code>`,
         });
       }
     });

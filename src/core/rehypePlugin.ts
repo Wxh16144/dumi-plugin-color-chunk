@@ -63,14 +63,19 @@ function rehypePlugin() {
             }
           }
 
+          let value;
           try {
-            JSXAttributes.push({
-              type: 'JSXAttribute',
-              name: 'value',
-              value: JSON.stringify(originalValue),
-            });
+            value = JSON.stringify(color.toString());
           } catch (error) {
             // nothing
+          } finally {
+            if (value) {
+              JSXAttributes.push({
+                type: 'JSXAttribute',
+                name: 'value',
+                value,
+              });
+            }
           }
 
           parent!.children.splice(index!, 1, {
