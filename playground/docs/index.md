@@ -1,10 +1,10 @@
 ---
-title: A static site based on dumi
+title: Beautify inline color blocks
 ---
 
 <br>
 
-## 美化颜色块儿
+## 美化颜色块儿 <sub>灵感来源 [Supported color models](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#supported-color-models)</sub>
 
 <br>
 
@@ -24,3 +24,13 @@ title: A static site based on dumi
 
 3. 在 `RGB` 色彩模型中，每个颜色都可以用一个三元组 `(R, G, B)` 来表示，其中 `R` 表示红色的取值，`G` 表示绿色的取值，`B` 表示蓝色的取值。
    例如，红色可以表示为 `rgb(255, 0, 0)`，绿色可以表示为 `rgb(0, 255, 0)`，蓝色可以表示为 `rgb(0, 0, 255)`。
+
+---
+
+## 更多
+
+|                                  Color                                  |                   Syntax                    |        Example         |        Output        |
+| :---------------------------------------------------------------------: | :-----------------------------------------: | :--------------------: | :------------------: |
+|    [HEX](https://developer.mozilla.org/en-US/docs/Web/CSS/hex-color)    | `#RGB` \| `#RRGGBB` \|`#RGBA` \|`#RRGGBBAA` |      \`#0969DA\`       |      `#0969DA`       |
+| [RGB](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb) |       `rgb(R,G,B)` \| `rgba(R,G,B,A)`       |  \`rgb(9, 105, 218)\`  |  `rgb(9, 105, 218)`  |
+| [HSL](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl) |       `hsl(H,S,L)` \| `hsl(H,S,L,A)`        | \`hsl(212, 92%, 45%)\` | `hsl(212, 92%, 45%)` |
