@@ -98,7 +98,7 @@
     "vitest": "latest"
   },
   "peerDependencies": {
-    "dumi": "^2"
+    "dumi": ">=2.0.0"
   },
   "optionalDependencies": {
     "react": "^18",
