@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.0.2...v1.0.3) (2023-09-22)
+
+### Bug Fixes
+
+- improve peerDeps version rules ([15dfa10](https://github.com/Wxh16144/dumi-plugin-color-chunk/commit/15dfa105641775b10eae1ba9b3875b74044c0af8))
+
 ## [1.0.2](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.0.1...v1.0.2) (2023-09-13)
 
 ### Bug Fixes
