@@ -37,7 +37,7 @@ title: Beautify inline color blocks
 |   [HSL](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl)   |       `hsl(H,S,L)` \| `hsl(H,S,L,A)`        | \`hsl(212, 92%, 45%)\` | `hsl(212, 92%, 45%)` |
 
 <details>
-<summary>CSS3下的147个颜色名称实例 <a href="https://www.zhangxinxu.com/study/201008/css3-color-names.php)">Source Page</a></summary>
+<summary>CSS3下的147个颜色名称实例 <a href="https://www.zhangxinxu.com/study/201008/css3-color-names.php">Source Page</a></summary>
 
 | 名称                   | 16 进制   | 百分值                   | 整数值             | 16 进制缩写 |
 | :--------------------- | :-------- | :----------------------- | :----------------- | :---------- |
