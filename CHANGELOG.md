@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.0.3...v1.0.4) (2023-09-26)
+
+### Bug Fixes
+
+- props spelling error ([4b27fdb](https://github.com/Wxh16144/dumi-plugin-color-chunk/commit/4b27fdb363e757354a55eacd2dc95180e0e1c506))
+
 ## [1.0.3](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.0.2...v1.0.3) (2023-09-22)
 
 ### Bug Fixes
