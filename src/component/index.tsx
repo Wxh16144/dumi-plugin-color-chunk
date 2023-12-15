@@ -1,4 +1,4 @@
-import { Color } from 'dumi-plugin-color-chunk';
+import { TinyColor } from '@ctrl/tinycolor';
 import * as React from 'react';
 
 interface ColorChunkProps {
@@ -33,12 +33,12 @@ function ColorChunk(props: React.PropsWithChildren<ColorChunkProps>) {
 
   const dotStyle: React.CSSProperties = {
     display: 'inline-block',
-    backgroundColor: new Color(finalValue).toRgbString(),
+    backgroundColor: new TinyColor(finalValue).toRgbString(),
     width: '6px',
     height: '6px',
     borderRadius: '50%',
     marginInlineStart: '4px',
-    border: `1px solid ${new Color(finalValue).darken(10).toString()}`,
+    border: `1px solid ${new TinyColor(finalValue).darken(10).toString()}`,
   };
 
   return (
