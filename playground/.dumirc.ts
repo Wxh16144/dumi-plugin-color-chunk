@@ -9,7 +9,7 @@ const isProdSite = process.env.PREVIEW !== '1' && isProd;
 const githubRepoName = 'dumi-plugin-color-chunk';
 
 export default defineConfig({
-  plugins: [githubRepoName],
+  plugins: [githubRepoName, 'dumi-plugin-code-snippets'],
   themeConfig: {
     name: 'color-chunk',
     socialLinks: {
