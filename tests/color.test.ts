@@ -1,5 +1,5 @@
-import { Color } from 'dumi-plugin-color-chunk';
 import { describe, expect, it } from 'vitest';
+import Color from '../src/core/Color';
 
 describe('Color', () => {
   it('should export Color', () => {

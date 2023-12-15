@@ -10,9 +10,7 @@
     "baseUrl": ".",
     "types": ["vitest/globals"],
     "paths": {
-      "@@/*": [".dumi/tmp/*"],
-      "@/*": ["src"],
-      "dumi-plugin-color-chunk": ["src/index.ts"]
+      "@@/*": [".dumi/tmp/*"]
     }
   }
 }

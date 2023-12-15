@@ -69,8 +69,7 @@
   },
   "dependencies": {
     "@ctrl/tinycolor": "^4",
-    "@rc-component/color-picker": "^1.4.1",
-    "vite-tsconfig-paths": "^4.2.2"
+    "@rc-component/color-picker": "^1.4.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17",
