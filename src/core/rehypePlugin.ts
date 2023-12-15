@@ -1,5 +1,5 @@
-import { TinyColor } from '@ctrl/tinycolor';
 import { unistUtilVisit } from 'dumi';
+import Color from './Color';
 import { VALID_COLOR_CHUNK } from './remarkPlugin';
 
 function rehypePlugin() {
@@ -7,13 +7,13 @@ function rehypePlugin() {
     unistUtilVisit.visit(tree, 'element', (node, index, parent) => {
       if (node.tagName === 'code' && node.properties?.[VALID_COLOR_CHUNK]) {
         const originalValue = node.children[0].value;
-        let color = new TinyColor(originalValue);
+        let color = new Color(originalValue);
 
-        if (!color.isValid) {
-          color = new TinyColor(node.properties[VALID_COLOR_CHUNK]);
+        if (!color.isStrictValid()) {
+          color = new Color(node.properties[VALID_COLOR_CHUNK]);
         }
 
-        if (color.isValid) {
+        if (color.isStrictValid()) {
           // https://github.com/scttcper/tinycolor#string-representations
           const methods = [
             'toHsv',
