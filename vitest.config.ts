@@ -1,12 +1,9 @@
+import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vitest/config';
-import { name } from './package.json';
 
 export default defineConfig({
+  plugins: [tsconfigPaths()],
   test: {
-    alias: {
-      '@': './src',
-      [name]: './src',
-    },
     coverage: {
       reporter: ['text', 'text-summary', 'json', 'lcov'],
       include: ['src/**/*'],
