@@ -40,8 +40,6 @@ function rehypePlugin() {
 
             'toName',
 
-            'toFilter',
-
             'toString',
           ];
 
