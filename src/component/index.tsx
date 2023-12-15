@@ -11,6 +11,9 @@ interface ColorChunkProps {
   rgbString?: string;
   percentageRgbString?: string;
   name?: string;
+  /**
+   * @deprecated unused
+   */
   filter?: string;
   string?: string;
 }
@@ -26,7 +29,6 @@ function ColorChunk(props: React.PropsWithChildren<ColorChunkProps>) {
     props.hsvString ??
     props.HslString ??
     props.name ??
-    props.filter ??
     props.string;
 
   const dotStyle: React.CSSProperties = {
