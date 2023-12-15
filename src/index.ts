@@ -4,6 +4,8 @@ import { rehypePlugin, remarkPlugin } from './core';
 
 const COMPONENT_PATH = path.join(__dirname, '../es/component/index.js');
 
+export { default as Color } from './core/Color';
+
 export default (api: IApi) => {
   api.register({
     key: 'modifyConfig',

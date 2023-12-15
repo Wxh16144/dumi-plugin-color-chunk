@@ -12,8 +12,7 @@
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "@/*": ["src"],
-      "easy-antd-modal": ["src"],
-      "easy-antd-modal/*": ["src/*", "*"]
+      "dumi-plugin-color-chunk": ["src/index.ts"]
     }
   }
 }

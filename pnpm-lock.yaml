@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -7,6 +11,9 @@ importers:
       '@ctrl/tinycolor':
         specifier: ^4
         version: 4.0.2
+      '@rc-component/color-picker':
+        specifier: ^1.4.1
+        version: 1.4.1(react-dom@18.2.0)(react@18.2.0)
       dumi:
         specifier: '>=2.0.0'
         version: 2.2.4(@babel/core@7.22.10)(@types/node@20.4.8)(@types/react@18.2.19)(eslint@8.46.0)(postcss@8.4.27)(prettier@2.8.8)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.0.7)(stylelint@15.10.2)(typescript@5.1.6)(webpack@5.88.2)
@@ -1732,6 +1739,11 @@ packages:
     dependencies:
       postcss-selector-parser: 6.0.13
 
+  /@ctrl/tinycolor@3.6.1:
+    resolution: {integrity: sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA==}
+    engines: {node: '>=10'}
+    dev: false
+
   /@ctrl/tinycolor@4.0.2:
     resolution: {integrity: sha512-fKQinXE9pJ83J1n+C3rDl2xNLJwfoYNvXLRy5cYZA9hBJJw2q+sbb/AOSNKmLxnTWyNTmy4994dueSwP4opi5g==}
     engines: {node: '>=14'}
@@ -2669,6 +2681,20 @@ packages:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
     dev: true
+
+  /@rc-component/color-picker@1.4.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-vh5EWqnsayZa/JwUznqDaPJz39jznx/YDbyBuVJntv735tKXKwEUZZb2jYEldOg+NKWZwtALjGMrNeGBmqFoEw==}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': 7.22.10
+      '@ctrl/tinycolor': 3.6.1
+      classnames: 2.3.2
+      rc-util: 5.36.0(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /@rc-component/portal@1.1.2(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-6f813C0IsasTZms08kfA8kPAGxbbkYToa8ALaiDIGGECU4i9hj8Plgbx0sNJDrey3EtHO30hmdaxtT0138xZcg==}
@@ -11949,6 +11975,7 @@ packages:
 
   /scheduler@0.23.0:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+    requiresBuild: true
     dependencies:
       loose-envify: 1.4.0
 
@@ -14045,7 +14072,3 @@ packages:
 
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
