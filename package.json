@@ -99,7 +99,7 @@
     "vitest": "latest"
   },
   "peerDependencies": {
-    "dumi": ">=2.0.0"
+    "dumi": "2.x"
   },
   "optionalDependencies": {
     "react": "^18",
