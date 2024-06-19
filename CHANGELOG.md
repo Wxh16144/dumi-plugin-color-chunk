@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.1.0...v1.1.1) (2024-06-19)
+
+### Bug Fixes
+
+- not resolve dependency: npm error peer dumi@">=2.0.0" ([#6](https://github.com/Wxh16144/dumi-plugin-color-chunk/issues/6)) ([ede90ce](https://github.com/Wxh16144/dumi-plugin-color-chunk/commit/ede90ce86fa835c7341ed7935bcadef362b25b76))
+
 # [1.1.0](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.0.4...v1.1.0) (2023-12-15)
 
 ### Features
