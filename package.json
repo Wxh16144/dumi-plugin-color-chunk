@@ -98,9 +98,6 @@
     "typescript": "^5",
     "vitest": "latest"
   },
-  "peerDependencies": {
-    "dumi": "2.x"
-  },
   "optionalDependencies": {
     "react": "^18",
     "react-dom": "^18"
