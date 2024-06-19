@@ -83,6 +83,7 @@
     "commitlint": "^17",
     "concurrently": "^7",
     "cross-env": "^7",
+    "dumi": "^2",
     "eslint": "^8",
     "fast-glob": "^3.3.1",
     "father": "^4",
@@ -99,6 +100,7 @@
     "vitest": "latest"
   },
   "optionalDependencies": {
+    "dumi": "^2",
     "react": "^18",
     "react-dom": "^18"
   },
