@@ -6,6 +6,8 @@
 
 ### Install
 
+> Prerequisites: dumi@2.0.0+
+
 ```bash
 npm install dumi-plugin-color-chunk --save-dev
 ```
