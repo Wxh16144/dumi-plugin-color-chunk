@@ -1,3 +1,9 @@
+## [1.1.2](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.1.1...v1.1.2) (2024-08-07)
+
+### Bug Fixes
+
+- lockup upstream dependencies of @rc-component/color-picker ([#7](https://github.com/Wxh16144/dumi-plugin-color-chunk/issues/7)) ([0e1024a](https://github.com/Wxh16144/dumi-plugin-color-chunk/commit/0e1024af3e69d23e5131dab1f5a9a63fa2bba7a6))
+
 ## [1.1.1](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.1.0...v1.1.1) (2024-06-19)
 
 ### Bug Fixes
