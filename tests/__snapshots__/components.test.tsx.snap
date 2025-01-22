@@ -29,6 +29,7 @@ exports[`export > should work 1`] = `
   "convertHexToDecimal",
   "parseIntFromHex",
   "numberInputToObject",
+  "Color",
   "default",
 ]
 `;
