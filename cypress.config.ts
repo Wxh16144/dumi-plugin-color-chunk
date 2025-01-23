@@ -7,6 +7,7 @@ const prot = process.env.PORT || 8000;
 
 export default defineConfig({
   e2e: {
+    defaultBrowser: 'chrome',
     baseUrl: `http://localhost:${prot}`,
     setupNodeEvents(on, config) {
       return getCompareSnapshotsPlugin(on, config);

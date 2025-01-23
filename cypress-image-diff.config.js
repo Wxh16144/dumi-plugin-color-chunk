@@ -1,10 +1,10 @@
 // const path = require('path')
 
 const getFailOnMissingBaseline = () => {
-  if (process.env.CI) return true;
-
   const _env = process.env.FAIL_ON_MISSING_BASELINE;
-  return _env !== 'false' && _env !== '0';
+  if (_env === 'false' || _env === '0') return false;
+
+  return Boolean(process.env.CI);
 };
 
 // https://cypress.visual-image-diff.dev/getting-started/custom-config-file
