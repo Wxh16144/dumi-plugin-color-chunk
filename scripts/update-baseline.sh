@@ -5,6 +5,7 @@ set -e
 
 docker build -f Cypress.Dockerfile \
   -t self-cypress-chrome-for-testing \
+  --platform linux/amd64 \
   --build-arg CHINA_MIRROR=$CHINA_MIRROR \
   .
 
@@ -14,4 +15,4 @@ docker run --rm \
   -w /opt/app \
   --entrypoint bash \
   self-cypress-chrome-for-testing \
-  -c "pnpm run test:e2e:update --browser electron"
+  -c "pnpm run test:e2e:update"

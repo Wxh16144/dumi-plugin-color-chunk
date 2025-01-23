@@ -10,7 +10,7 @@ export default defineConfig({
     defaultBrowser: 'chrome',
     baseUrl: `http://localhost:${prot}`,
     setupNodeEvents(on, config) {
-      return getCompareSnapshotsPlugin(on, config);
+      getCompareSnapshotsPlugin(on, config);
     },
   },
 });

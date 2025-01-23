@@ -1,3 +1,4 @@
+# --platform linux/amd64
 FROM cypress/included:cypress-13.17.0-node-22.13.0-chrome-131.0.6778.264-1-ff-134.0-edge-131.0.2903.112-1
 
 COPY . /opt/app
@@ -9,7 +10,8 @@ VOLUME /opt/app/cypress-image-diff
 
 #  是否使用国内镜像
 ARG CHINA_MIRROR=true
-ARG CHROME_VERSION=stable
+# ARG CHROME_VERSION=stable
+ARG CHROME_VERSION=131.0.6778.264
 
 # 设置 npm 镜像
 RUN if [ "$CHINA_MIRROR" = "true" ]; then \
@@ -27,9 +29,9 @@ RUN npm install -g pnpm@8.15.8 && \
     pnpm install && \
     npx cypress install
 
-# RUN INSTALL_OUTPUT=$(npx @puppeteer/browsers install chrome@${CHROME_VERSION} --path /tmp/chrome-for-testing) && \
-# DOWNLOAD_DIR=$(echo "$INSTALL_OUTPUT" | grep -o '\/.*\/chrome-linux64') && \
-# mv $DOWNLOAD_DIR /opt/chrome-for-testing
+RUN INSTALL_OUTPUT=$(npx @puppeteer/browsers install chrome@${CHROME_VERSION} --path /tmp/chrome-for-testing) && \
+DOWNLOAD_DIR=$(echo "$INSTALL_OUTPUT" | grep -o '\/.*\/chrome-linux64') && \
+mv $DOWNLOAD_DIR /opt/chrome-for-testing
 
-# RUN ln -fs /opt/chrome-for-testing/chrome /usr/local/bin/chrome
-# RUN rm -rf /tmp/chrome-for-testing
+RUN ln -fs /opt/chrome-for-testing/chrome /usr/local/bin/chrome
+RUN rm -rf /tmp/chrome-for-testing
