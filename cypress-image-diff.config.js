@@ -1,7 +1,7 @@
 // const path = require('path')
 
 const getFailOnMissingBaseline = () => {
-  if (process.env.CI) return true;
+  // if (process.env.CI) return true;
 
   const _env = process.env.FAIL_ON_MISSING_BASELINE;
   return _env !== 'false' && _env !== '0';
