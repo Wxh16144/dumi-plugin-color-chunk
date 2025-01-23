@@ -41,3 +41,8 @@ screenshot
 example/.temp/*
 .eslintcache
 techUI*
+
+# cypress-image-diff
+cypress-image-diff/html-report
+cypress-image-diff/visual-screenshots/*
+!cypress-image-diff/visual-screenshots/baseline

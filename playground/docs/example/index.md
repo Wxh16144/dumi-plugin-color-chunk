@@ -4,8 +4,8 @@ title: Examples
 
 ## input
 
-<<< ./\_example.md
+<<< ./source.md
 
 ## output
 
-<embed src="./_example.md"></embed>
+<embed src="./source.md"></embed>
