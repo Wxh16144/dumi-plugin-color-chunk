@@ -1,8 +1,21 @@
 describe('website', () => {
   it('example', () => {
-    cy.visit('/example/source');
+    // 不需要样式，只需要内容视觉对比
+    cy.intercept(
+      {
+        url: '*.css',
+        method: 'GET',
+      },
+      {
+        statusCode: 200,
+        body: `* { font-family: "sans-serif" !important; }`,
+        headers: {
+          'content-type': 'text/css',
+        },
+      },
+    );
 
-    // cy.get('.markdown').invoke('css', 'font-family', 'unset');
+    cy.visit('/example/source');
 
     // 隐藏头部，规避头部遮盖内容
     cy.get('.dumi-default-header').hideElement();

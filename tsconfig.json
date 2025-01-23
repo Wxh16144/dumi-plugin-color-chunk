@@ -10,7 +10,7 @@
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "baseUrl": ".",
-    "types": ["vitest/globals"],
+    "types": ["vitest/globals", "cypress"],
     "paths": {
       "@@/*": [".dumi/tmp/*"]
     }
