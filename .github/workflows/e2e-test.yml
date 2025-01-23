@@ -20,12 +20,15 @@ jobs:
       - name: Install deps
         run: pnpm install
 
+      # - name: Cypress run
+      #   uses: cypress-io/github-action@v6
+      #   with:
+      #     # build: pnpm run build
+      #     start: pnpm run test:e2e:ci
+      #     browser: chrome
+
       - name: Cypress run
-        uses: cypress-io/github-action@v6
-        with:
-          # build: pnpm run build
-          start: pnpm run test:e2e:ci
-          browser: chrome
+        run: pnpm run test:e2e:ci
 
       - name: upload failed image diff artifacts
         if: failure()
