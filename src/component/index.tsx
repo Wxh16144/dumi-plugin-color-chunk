@@ -51,5 +51,6 @@ function ColorChunk(props: React.PropsWithChildren<ColorChunkProps>) {
 
 // ====== Export ======
 export * from '@ctrl/tinycolor';
+export { default as Color } from '../core/Color';
 export type { ColorChunkProps };
 export default React.memo(ColorChunk);

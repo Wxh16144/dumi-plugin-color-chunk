@@ -1,0 +1,33 @@
+name: E2E Test CI
+on: [push, pull_request]
+
+jobs:
+  cypress-run:
+    if: false # FIXME: ci 环境和本地环境差异太大，不好解决
+    runs-on: ubuntu-24.04
+    container:
+      # see: Cypress.Dockerfile
+      image: cypress/included:cypress-13.17.0-node-22.13.0-chrome-131.0.6778.264-1-ff-134.0-edge-131.0.2903.112-1
+      options: --user 1001
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8.15.8
+
+      - name: Install deps
+        run: pnpm install
+
+      - name: Cypress run
+        run: pnpm run test:e2e:ci
+
+      - name: upload failed image diff artifacts
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-image-diff-failure-results
+          path: cypress-image-diff
+          retention-days: 7

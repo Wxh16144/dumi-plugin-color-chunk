@@ -3,13 +3,14 @@
   "private": true,
   "scripts": {
     "build": "dumi build",
-    "dev": "dumi dev",
+    "dev": "hard-load && dumi dev",
     "prepare": "dumi setup",
     "start": "npm run dev"
   },
   "devDependencies": {
     "dumi": "^2",
     "dumi-plugin-code-snippets": "^1",
-    "dumi-plugin-color-chunk": "workspace:*"
+    "dumi-plugin-color-chunk": "workspace:*",
+    "hard-load": "^0.0.6"
   }
 }

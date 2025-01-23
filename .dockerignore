@@ -1,0 +1,12 @@
+**/node_modules/
+**/dist
+**/es
+**/lib
+
+.git
+npm-debug.log
+.coverage
+.coverage.*
+.env
+
+cypress-image-diff/*
