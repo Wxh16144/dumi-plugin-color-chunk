@@ -1,3 +1,9 @@
+## [2.0.1](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v2.0.0...v2.0.1) (2025-03-19)
+
+### Bug Fixes
+
+- replace TinyColor with custom Color implementation in ColorChunk ([#13](https://github.com/Wxh16144/dumi-plugin-color-chunk/issues/13)) ([cf871f2](https://github.com/Wxh16144/dumi-plugin-color-chunk/commit/cf871f271e77af4f9c66fc994545703d8ee1c679))
+
 # [2.0.0](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.1.2...v2.0.0) (2025-03-19)
 
 ### Code Refactoring
