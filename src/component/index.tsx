@@ -1,4 +1,3 @@
-import { TinyColor } from '@ctrl/tinycolor';
 import * as React from 'react';
 import Color from '../core/Color';
 
@@ -21,7 +20,7 @@ function ColorChunk(props: ColorChunkProps) {
       height: '6px',
       borderRadius: '50%',
       marginInlineStart: '4px',
-      border: `1px solid ${new TinyColor(value).darken(10).toHex8String(true)}`,
+      border: `1px solid ${new Color(value).darken(10).toHex8String(true)}`,
     }),
     [value],
   );
