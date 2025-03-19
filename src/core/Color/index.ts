@@ -1,12 +1,50 @@
-import { Color as TinyColor } from '@rc-component/color-picker';
+import type { ColorInput } from '@ctrl/tinycolor';
+import { TinyColor } from '@ctrl/tinycolor';
 import { strictMatchers } from './re';
+
+export interface HSB {
+  h: number | string;
+  s: number | string;
+  b: number | string;
+}
+
+export interface RGB {
+  r: number | string;
+  g: number | string;
+  b: number | string;
+}
+
+export interface HSBA extends HSB {
+  a: number;
+}
+
+export interface RGBA extends RGB {
+  a: number;
+}
+
+export type ColorGenInput<T = Color> = string | number | RGB | RGBA | HSB | HSBA | T;
 
 const map = new Map<string, boolean>();
 
-class Color extends TinyColor {
-  // eslint-disable-next-line @typescript-eslint/no-useless-constructor
-  constructor(color: string = '') {
-    super(color.trim());
+const convertHsb2Hsv = (color: ColorGenInput): ColorInput => {
+  if (color && typeof color === 'object' && 'h' in color && 'b' in color) {
+    const { b, ...resets } = color as HSB;
+    return {
+      ...resets,
+      v: b,
+    };
+  }
+  if (typeof color === 'string') {
+    let nextColor = color;
+    if (/hsb/.test(color)) nextColor = color.replace(/hsb/, 'hsv');
+    return nextColor.trim() as ColorInput;
+  }
+  return color as ColorInput;
+};
+
+export class Color extends TinyColor {
+  constructor(color: ColorGenInput) {
+    super(convertHsb2Hsv(color));
   }
 
   /**
