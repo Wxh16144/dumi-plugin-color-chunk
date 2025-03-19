@@ -1,56 +1,35 @@
-import { TinyColor } from '@ctrl/tinycolor';
 import * as React from 'react';
+import Color from '../core/Color';
 
-interface ColorChunkProps {
-  value?: string;
-  hsvString?: string;
-  HslString?: string;
-  hexString?: string;
-  hex8String?: string;
-  hexShortString?: string;
-  rgbString?: string;
-  percentageRgbString?: string;
-  name?: string;
-  /**
-   * @deprecated unused
-   */
-  filter?: string;
-  string?: string;
-}
+type ColorChunkProps = React.PropsWithChildren<{
+  value: string;
+}>;
 
-function ColorChunk(props: React.PropsWithChildren<ColorChunkProps>) {
-  const finalValue =
-    props.value ??
-    props.hexShortString ??
-    props.hexString ??
-    props.hex8String ??
-    props.rgbString ??
-    props.percentageRgbString ??
-    props.hsvString ??
-    props.HslString ??
-    props.name ??
-    props.string;
+function ColorChunk(props: ColorChunkProps) {
+  const { value, children } = props;
 
-  const dotStyle: React.CSSProperties = {
-    display: 'inline-block',
-    backgroundColor: new TinyColor(finalValue).toRgbString(),
-    width: '6px',
-    height: '6px',
-    borderRadius: '50%',
-    marginInlineStart: '4px',
-    border: `1px solid ${new TinyColor(finalValue).darken(10).toString()}`,
-  };
+  const dotStyle = React.useMemo<React.CSSProperties>(() => {
+    const _color = new Color(value);
+    return {
+      display: 'inline-block',
+      backgroundColor: _color.toRgbString(),
+      width: '6px',
+      height: '6px',
+      borderRadius: '50%',
+      marginInlineStart: '4px',
+      border: `1px solid ${_color.darken(10).toString()}`,
+    };
+  }, [value]);
 
   return (
     <code>
-      {props.children ?? finalValue}
+      {children ?? value}
       <span style={dotStyle} />
     </code>
   );
 }
 
 // ====== Export ======
-export * from '@ctrl/tinycolor';
-export { default as Color } from '../core/Color';
+export { Color };
 export type { ColorChunkProps };
 export default React.memo(ColorChunk);
