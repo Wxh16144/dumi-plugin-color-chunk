@@ -21,6 +21,7 @@ export const strictMatchers = {
   hsla: new RegExp(`^hsla${PERMISSIVE_MATCH4_STRICT}`),
   hsv: new RegExp(`^hsv${PERMISSIVE_MATCH3_STRICT}`),
   hsva: new RegExp(`^hsva${PERMISSIVE_MATCH4_STRICT}`),
+  cmyk: new RegExp(`^cmyk${PERMISSIVE_MATCH4_STRICT}`),
   hex3: /^#([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
   hex6: /^#([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/,
   hex4: /^#([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,

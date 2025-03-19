@@ -24,7 +24,15 @@
 `hsla(12,3,52,.2)`
 `hsla(9, 100%, 64%, 0.2)`
 
-## <!-- 👇👇👇 invalid 👇👇👇 -->
+<!-- https://github.com/scttcper/tinycolor/commit/2927a9d2aa03e037486a79a295542a7848621691 -->
+
+`cmyk(20, 50, 100, 0)`
+
+---
+
+**Invalid**
+
+<!-- 👇👇👇 invalid 👇👇👇 -->
 
 `rgba(12,3,2,12%)` <= invalid
 
