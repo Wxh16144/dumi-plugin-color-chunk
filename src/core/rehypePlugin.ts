@@ -14,66 +14,18 @@ function rehypePlugin() {
         }
 
         if (color.isStrictValid()) {
-          // https://github.com/scttcper/tinycolor#string-representations
-          const methods = [
-            'toHsv',
-            'toHsvString',
-
-            'toHsl',
-            'toHslString',
-
-            'toNumber',
-
-            'toHex',
-            'toHexString',
-
-            'toHex8',
-            'toHex8String',
-
-            'toHexShortString',
-
-            'toRgb',
-            'toRgbString',
-
-            'toPercentageRgb',
-            'toPercentageRgbString',
-
-            'toName',
-
-            'toString',
-          ];
-
+          let value = '#00000000'; // transparent
           const JSXAttributes = [];
-
-          for (const method of methods) {
-            try {
-              // @ts-ignore
-              const result = color[method]();
-              const propsName = method.replace(/^to/, '').replace(/^[A-Z]/, (s) => s.toLowerCase());
-
-              JSXAttributes.push({
-                type: 'JSXAttribute',
-                name: propsName,
-                value: JSON.stringify(result),
-              });
-            } catch (e) {
-              /** nothing */
-            }
-          }
-
-          let value;
           try {
-            value = JSON.stringify(color.toString());
+            value = JSON.stringify(color.toHex8String(true));
           } catch (error) {
             // nothing
           } finally {
-            if (value) {
-              JSXAttributes.push({
-                type: 'JSXAttribute',
-                name: 'value',
-                value,
-              });
-            }
+            JSXAttributes.push({
+              type: 'JSXAttribute',
+              name: 'value',
+              value,
+            });
           }
 
           parent!.children.splice(index!, 1, {

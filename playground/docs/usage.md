@@ -23,12 +23,12 @@ export default {
 
 ```js | pure
 // .duim/theme/builtins/ColorChunk.ts
-import { TinyColor } from 'dumi-plugin-color-chunk/component';
+import { Color } from 'dumi-plugin-color-chunk/component';
 
 export default (props) => {
   return (
     <code>
-      {props.children ?? new TinyColor(props.children).toHexString()}
+      {props.children ?? new Color(props.value).toHex8String()}
       {/* more logic */}
     </code>
   );

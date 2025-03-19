@@ -75,8 +75,7 @@
     ]
   },
   "dependencies": {
-    "@ctrl/tinycolor": "^4",
-    "@rc-component/color-picker": "1.5.3"
+    "@ctrl/tinycolor": "^4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17",
