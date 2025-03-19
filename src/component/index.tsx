@@ -1,33 +1,34 @@
+import { TinyColor } from '@ctrl/tinycolor';
 import * as React from 'react';
 import Color from '../core/Color';
 
 type ColorChunkProps = React.PropsWithChildren<{
   /**
-   * 颜色的十六进制值，带 `#` 前缀
-   * @example '#000' | '#000000' ｜ '#000000ff'
+   * 颜色的十六进制值，带 `#` 前缀 (4/8 位带 alpha 通道)
+   * @example '#000f' ｜ '#000000ff'
    */
   value: string;
 }>;
 
 function ColorChunk(props: ColorChunkProps) {
-  const { value, children } = props;
+  const { children, value } = props;
 
-  const dotStyle = React.useMemo<React.CSSProperties>(() => {
-    const _color = new Color(value);
-    return {
+  const dotStyle = React.useMemo<React.CSSProperties>(
+    () => ({
       display: 'inline-block',
-      backgroundColor: _color.toHexString(true),
+      backgroundColor: value,
       width: '6px',
       height: '6px',
       borderRadius: '50%',
       marginInlineStart: '4px',
-      border: `1px solid ${_color.darken(10).toHexString(true)}`,
-    };
-  }, [value]);
+      border: `1px solid ${new TinyColor(value).darken(10).toHex8String(true)}`,
+    }),
+    [value],
+  );
 
   return (
     <code>
-      {children ?? value}
+      {children}
       <span style={dotStyle} />
     </code>
   );

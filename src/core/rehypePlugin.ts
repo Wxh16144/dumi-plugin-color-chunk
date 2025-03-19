@@ -17,7 +17,7 @@ function rehypePlugin() {
           let value = '#00000000'; // transparent
           const JSXAttributes = [];
           try {
-            value = JSON.stringify(color.toHexString(true));
+            value = JSON.stringify(color.toHex8String(true));
           } catch (error) {
             // nothing
           } finally {
