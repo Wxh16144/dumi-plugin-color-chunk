@@ -27,8 +27,8 @@ function ColorChunk(props: ColorChunkProps) {
   );
 
   return (
-    <code>
-      {children}
+    <code aria-label={`Color: ${value}`}>
+      {children || value}
       <span style={dotStyle} />
     </code>
   );
