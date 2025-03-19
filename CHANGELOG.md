@@ -1,3 +1,16 @@
+# [2.0.0](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.1.2...v2.0.0) (2025-03-19)
+
+### Code Refactoring
+
+- 重构 & 精简实现 ([#12](https://github.com/Wxh16144/dumi-plugin-color-chunk/issues/12)) ([8a7afe3](https://github.com/Wxh16144/dumi-plugin-color-chunk/commit/8a7afe3072f01560075f096e3f8e19b86794f6ff))
+
+### BREAKING CHANGES
+
+- `dumi-plugin-color-chunk/component` props 仅支持 value 和 children
+
+* value 转换为 8 或 4 十六进制颜色值
+* children 原始文本
+
 ## [1.1.2](https://github.com/Wxh16144/dumi-plugin-color-chunk/compare/v1.1.1...v1.1.2) (2024-08-07)
 
 ### Bug Fixes
