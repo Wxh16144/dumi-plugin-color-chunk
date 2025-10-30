@@ -2,6 +2,7 @@ import { defineConfig } from 'cypress';
 
 // https://cypress.visual-image-diff.dev/
 import getCompareSnapshotsPlugin from 'cypress-image-diff-js/plugin';
+// @ts-ignore
 import { initPlugin } from 'cypress-plugin-snapshots/plugin';
 
 const prot = process.env.PORT || 8000;
@@ -15,9 +16,9 @@ export default defineConfig({
       initPlugin(on, config);
     },
   },
-  env:{
-    "cypress-plugin-snapshots": {
+  env: {
+    'cypress-plugin-snapshots': {
       updateSnapshots: !!process.env.UP_SNAP,
-    }
-  }
+    },
+  },
 });
