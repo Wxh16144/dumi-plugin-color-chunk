@@ -187,6 +187,6 @@ title: Beautify inline color blocks
 | `white`                | `#ffffff` | `rgb(100%,100%,100%)`    | `rgb(255,255,255)` | `#fff`      |
 | `whitesmoke`           | `#f5f5f5` | `rgb(96.1%,96.1%,96.1%)` | `rgb(245,245,245)` |             |
 | `yellow`               | `#ffff00` | `rgb(100%,100%,0%)`      | `rgb(255,255,0)`   | `#ff0`      |
-| `yellowgreen`          | `#9acd32` | `rgb(60.4%,80.4%,19.6%`  | `rgb(154,205,50)`  |             |
+| `yellowgreen`          | `#9acd32` | `rgb(60.4%,80.4%,19.6%)` | `rgb(154,205,50)`  |             |
 
 </details>
