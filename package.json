@@ -92,6 +92,7 @@
     "cypress": "^13.7.3",
     "cypress-image-diff-html-report": "^2.2.0",
     "cypress-image-diff-js": "^2.3.0",
+    "cypress-plugin-snapshots": "^1.4.4",
     "dumi": "^2",
     "eslint": "^8",
     "fast-glob": "^3.3.1",

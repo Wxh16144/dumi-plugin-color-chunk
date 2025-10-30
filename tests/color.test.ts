@@ -109,5 +109,18 @@ describe('Color', () => {
       const color2 = new Color(' green ');
       expect(color2.isStrictValid()).toBe(true);
     });
+
+    // alpha 百分比
+    it('should not support percentage for alpha value', () => {
+      const color = new Color('rgba(122,223,2,12%)');
+      expect(color.isValid).toBe(true);
+      expect(color.isStrictValid()).toBe(true);
+      expect(color.toRgb().a).toBe(1);
+
+      const color2 = new Color('hsva(123,1,222,22%)');
+      expect(color2.isValid).toBe(true);
+      expect(color2.isStrictValid()).toBe(true);
+      expect(color2.toHsv().a).toBe(1);
+    });
   });
 });

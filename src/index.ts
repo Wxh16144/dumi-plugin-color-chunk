@@ -4,6 +4,12 @@ import { rehypePlugin, remarkPlugin } from './core';
 
 const COMPONENT_PATH = path.join(__dirname, '../es/component/index.js');
 
+const toArr = <T>(val?: T | T[]) => {
+  if (Array.isArray(val)) return val;
+  // eslint-disable-next-line eqeqeq
+  return val != null ? [val] : [];
+};
+
 export default (api: IApi) => {
   api.describe({
     key: 'dumi-plugin:color-chunk',
@@ -14,22 +20,8 @@ export default (api: IApi) => {
     fn: (memo: IApi['config']) => {
       memo.alias['dumi-plugin-color-chunk/component'] = COMPONENT_PATH;
 
-      const cloneExtraRemarkPlugins = memo.extraRemarkPlugins,
-        cloneExtraRehypePlugins = memo.extraRehypePlugins;
-
-      memo.extraRemarkPlugins = [
-        remarkPlugin,
-        ...(Array.isArray(cloneExtraRemarkPlugins)
-          ? cloneExtraRemarkPlugins
-          : ([cloneExtraRemarkPlugins].filter(Boolean) as any)),
-      ];
-
-      memo.extraRehypePlugins = [
-        rehypePlugin,
-        ...(Array.isArray(cloneExtraRehypePlugins)
-          ? cloneExtraRehypePlugins
-          : ([cloneExtraRehypePlugins].filter(Boolean) as any)),
-      ];
+      memo.extraRemarkPlugins = [remarkPlugin, ...toArr(memo.extraRemarkPlugins)];
+      memo.extraRehypePlugins = [rehypePlugin, ...toArr(memo.extraRehypePlugins)];
 
       return memo;
     },

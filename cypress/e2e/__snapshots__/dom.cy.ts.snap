@@ -1,0 +1,118 @@
+exports[`website > example #0`] = `
+<div class="markdown">
+  <p>
+    <code aria-label="Color: #f00f"
+      >red<span
+        style="display: inline-block; background-color: rgb(255, 0, 0); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(204, 0, 0);"
+      ></span></code
+    ><code aria-label="Color: #ff0f"
+      >yellow<span
+        style="display: inline-block; background-color: rgb(255, 255, 0); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(204, 204, 0);"
+      ></span></code
+    ><code aria-label="Color: #ee82eeff"
+      >violet<span
+        style="display: inline-block; background-color: rgb(238, 130, 238); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(232, 85, 232);"
+      ></span></code
+    ><code aria-label="Color: #00bfffff"
+      >deepskyblue<span
+        style="display: inline-block; background-color: rgb(0, 191, 255); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(0, 153, 204);"
+      ></span
+    ></code>
+  </p>
+  <p>
+    <code aria-label="Color: #12df"
+      >#12d<span
+        style="display: inline-block; background-color: rgb(17, 34, 221); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(13, 27, 174);"
+      ></span></code
+    ><code aria-label="Color: #1677ffff"
+      >#1677ff<span
+        style="display: inline-block; background-color: rgb(22, 119, 255); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(0, 94, 226);"
+      ></span></code
+    ><code aria-label="Color: #2333"
+      >#2333<span
+        style="display: inline-block; background-color: rgba(34, 51, 51, 0.2); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgba(14, 20, 20, 0.2);"
+      ></span></code
+    ><code aria-label="Color: #12345678"
+      >#12345678<span
+        style="display: inline-block; background-color: rgba(18, 52, 86, 0.47); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgba(9, 26, 44, 0.47);"
+      ></span
+    ></code>
+  </p>
+  <p>
+    <code aria-label="Color: #7b0302ff"
+      >rgb(123,3,2)<span
+        style="display: inline-block; background-color: rgb(123, 3, 2); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(73, 2, 1);"
+      ></span></code
+    ><code aria-label="Color: #0c030233"
+      >rgba(12,3,2,.2)<span
+        style="display: inline-block; background-color: rgba(12, 3, 2, 0.2); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgba(0, 0, 0, 0.2);"
+      ></span
+    ></code>
+  </p>
+  <p>
+    <code aria-label="Color: #1f1e1eff"
+      >hsv(12,3,12)<span
+        style="display: inline-block; background-color: rgb(31, 30, 30); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(5, 5, 5);"
+      ></span></code
+    ><code aria-label="Color: #383736cc"
+      >hsva(12,3,22,.8)<span
+        style="display: inline-block; background-color: rgba(56, 55, 54, 0.8); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgba(30, 29, 29, 0.8);"
+      ></span
+    ></code>
+  </p>
+  <p>
+    <code aria-label="Color: #050100ff"
+      >hsb(12,99,2)<span
+        style="display: inline-block; background-color: rgb(5, 1, 0); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(0, 0, 0);"
+      ></span></code
+    ><code aria-label="Color: #0005003d"
+      >hsba(124,233,2,.24)<span
+        style="display: inline-block; background-color: rgba(0, 5, 0, 0.24); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgba(0, 0, 0, 0.24);"
+      ></span
+    ></code>
+  </p>
+  <p>
+    <code aria-label="Color: #ffff"
+      >hsl(12,3,198)<span
+        style="display: inline-block; background-color: rgb(255, 255, 255); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(230, 230, 230);"
+      ></span></code
+    ><code aria-label="Color: #ff8080ff"
+      >hsl(0, 100%, 75%)<span
+        style="display: inline-block; background-color: rgb(255, 128, 128); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(255, 77, 77);"
+      ></span></code
+    ><code aria-label="Color: #88828133"
+      >hsla(12,3,52,.2)<span
+        style="display: inline-block; background-color: rgba(136, 130, 129, 0.2); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgba(110, 105, 104, 0.2);"
+      ></span></code
+    ><code aria-label="Color: #ff634733"
+      >hsla(9, 100%, 64%, 0.2)<span
+        style="display: inline-block; background-color: rgba(255, 99, 71, 0.2); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgba(255, 56, 20, 0.2);"
+      ></span
+    ></code>
+  </p>
+  <p>
+    <code aria-label="Color: #cc8000ff"
+      >cmyk(20, 50, 100, 0)<span
+        style="display: inline-block; background-color: rgb(204, 128, 0); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(153, 96, 0);"
+      ></span
+    ></code>
+  </p>
+  <p>
+    <code aria-label="Color: #7adf02ff"
+      >rgba(122,223,2,12%)<span
+        style="display: inline-block; background-color: rgb(122, 223, 2); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(94, 172, 2);"
+      ></span
+    ></code>
+    <code aria-label="Color: #00ff0dff"
+      >hsva(123,1,222,22%)<span
+        style="display: inline-block; background-color: rgb(0, 255, 13); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(0, 204, 10);"
+      ></span
+    ></code>
+  </p>
+  <p><strong>Invalid</strong></p>
+  <p><code>[12,32,144]</code></p>
+  <p>[<code>12</code>,<code>32</code>,<code>144</code>]</p>
+  <p><code>123</code></p>
+  <p><code>#123456789</code></p>
+</div>
+`;

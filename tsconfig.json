@@ -1,5 +1,5 @@
 {
-  "include": ["src", "tests", ".dumi/**/*", ".dumirc.ts", "*.ts", "docs"],
+  "include": ["src", "tests", ".dumi/**/*", ".dumirc.ts", "*.ts", "docs", "cypress"],
   "compilerOptions": {
     "strict": true,
     "declaration": true,
@@ -10,7 +10,7 @@
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "baseUrl": ".",
-    "types": ["vitest/globals", "cypress"],
+    "types": ["vitest/globals", "cypress", "cypress-plugin-snapshots"],
     "paths": {
       "@@/*": [".dumi/tmp/*"]
     }
