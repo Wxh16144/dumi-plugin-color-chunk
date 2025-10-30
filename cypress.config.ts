@@ -15,4 +15,9 @@ export default defineConfig({
       initPlugin(on, config);
     },
   },
+  env:{
+    "cypress-plugin-snapshots": {
+      updateSnapshots: !!process.env.UP_SNAP,
+    }
+  }
 });

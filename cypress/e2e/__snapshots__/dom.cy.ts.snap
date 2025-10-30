@@ -97,25 +97,19 @@ exports[`website > example #0`] = `
       ></span
     ></code>
   </p>
-  <hr />
+  <p>
+    <code aria-label="Color: #7adf02ff"
+      >rgba(122,223,2,12%)<span
+        style="display: inline-block; background-color: rgb(122, 223, 2); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(94, 172, 2);"
+      ></span
+    ></code>
+    <code aria-label="Color: #00ff0dff"
+      >hsva(123,1,222,22%)<span
+        style="display: inline-block; background-color: rgb(0, 255, 13); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(0, 204, 10);"
+      ></span
+    ></code>
+  </p>
   <p><strong>Invalid</strong></p>
-  <p>
-    <code aria-label="Color: #0c0302ff"
-      >rgba(12,3,2,12%)<span
-        style="display: inline-block; background-color: rgb(12, 3, 2); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(0, 0, 0);"
-      ></span
-    ></code>
-    &lt;= invalid
-  </p>
-  <p>
-    <code aria-label="Color: #383736ff"
-      >hsva(12,3,22,22%)<span
-        style="display: inline-block; background-color: rgb(56, 55, 54); width: 6px; height: 6px; border-radius: 50%; margin-inline-start: 4px; border: 1px solid rgb(30, 29, 29);"
-      ></span
-    ></code>
-    &lt;= invalid
-  </p>
-  <hr />
   <p><code>[12,32,144]</code></p>
   <p>[<code>12</code>,<code>32</code>,<code>144</code>]</p>
   <p><code>123</code></p>

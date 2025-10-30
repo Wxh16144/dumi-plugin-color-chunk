@@ -28,17 +28,12 @@
 
 `cmyk(20, 50, 100, 0)`
 
----
+`rgba(122,223,2,12%)` <!-- alpha percentage not supported -->
+`hsva(123,1,222,22%)` <!-- alpha percentage not supported -->
 
 **Invalid**
 
 <!-- 👇👇👇 invalid 👇👇👇 -->
-
-`rgba(12,3,2,12%)` <= invalid
-
-`hsva(12,3,22,22%)` <= invalid
-
----
 
 `[12,32,144]`
 
